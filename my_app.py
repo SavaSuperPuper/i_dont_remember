@@ -1,4 +1,4 @@
-from PyQt5.QtCore import QtCore
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import(
     QApplication, QWidget,
     QHBoxLayout, QVBoxLayout,
@@ -36,7 +36,7 @@ class MainWin(QWidget):
         self.btn_next.clicked.connect(self.next_click)
 
     '''Уствнавливает, как будет выглядеть окно (надпись, размер, место)'''
-    def set_apper(self):
+    def set_appear(self):
         self.setWindowTitle(txt_title)
         self.resize(win_width, win_height)
         self.move(win_x, win_y)
@@ -44,4 +44,4 @@ class MainWin(QWidget):
 
 app = QApplication([])
 mw = MainWin()
-app.exec_()
+app.exec_() 
